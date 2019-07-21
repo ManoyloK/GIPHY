@@ -19,11 +19,12 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 
     ext {
         daggerVersion = 2.21
+        glideVersion = "4.9.0"
     }
 }
 
