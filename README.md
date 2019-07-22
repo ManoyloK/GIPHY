@@ -10,6 +10,7 @@ You should add at the very bottom of the gradle.properties file next fields
  * API_KEY = "api_key" where api_key is your key  which you can get in https://developers.giphy.com/
  * API_URL = "api_url" where api_url is url from where we'll get gifs data 
 (it's not secret it must be "https://api.giphy.com/")
+
 Than you should sync your project and press run to deploy.
 
 ### Testing
@@ -72,5 +73,3 @@ The project uses [MockWebServer][mockwebserver] project to test REST api interac
 [mockito]: http://site.mockito.org
 [multidex]: https://developer.android.com/studio/build/multidex
 [kotlin-allopen]: https://kotlinlang.org/docs/reference/compiler-plugins.html
-
-
