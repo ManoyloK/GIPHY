@@ -18,10 +18,12 @@ import com.manoilo.giphy.R
 import com.manoilo.giphy.binding.FragmentDataBindingComponent
 import com.manoilo.giphy.databinding.SearchFragmentBinding
 import com.manoilo.giphy.di.Injectable
+import com.manoilo.giphy.testing.OpenForTesting
 import com.manoilo.giphy.ui.common.GifListAdapter
 import com.manoilo.giphy.utils.AppExecutors
 import javax.inject.Inject
 
+@OpenForTesting
 class SearchFragment : Fragment(), Injectable {
 
     companion object {
