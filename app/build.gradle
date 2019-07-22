@@ -74,7 +74,6 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:2.2.10"
     // RxAndroid
     implementation "io.reactivex.rxjava2:rxandroid:2.1.0"
-    implementation "androidx.room:room-rxjava2:2.1.0"
 
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
@@ -91,12 +90,9 @@ dependencies {
 
     testImplementation "com.squareup.okhttp3:mockwebserver:$mockwebserver"
 
-
-
     testImplementation "org.mockito:mockito-core:$mockito"
     testImplementation "org.mockito:mockito-all:$mockitoAll"
     androidTestImplementation "org.mockito:mockito-android:$mockitoAndroid"
-
 
     testImplementation"androidx.arch.core:core-testing:$archCore"
     androidTestImplementation"androidx.arch.core:core-testing:$archCore"
@@ -104,10 +100,4 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
 
     implementation 'androidx.multidex:multidex:2.0.1'
-}
-configurations.compile.dependencies.each { compileDependency ->
-    println "Excluding compile dependency: ${compileDependency.getName()}"
-    configurations.androidTestCompile.dependencies.each { androidTestCompileDependency ->
-        configurations.androidTestCompile.exclude module: "${compileDependency.getName()}"
-    }
 }
