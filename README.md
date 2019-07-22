@@ -7,8 +7,8 @@ Introduction
 ### Building
 Download project from github and open in Android Studio 3.4.2+
 You should add at the very bottom of the gradle.properties file next fields
-API_KEY = "api_key" where api_key is your key  which you can get in ​ https://developers.giphy.com/
-API_URL = "api_url" where api_url is url from where we'll get gifs data 
+ * API_KEY = "api_key" where api_key is your key  which you can get in https://developers.giphy.com/
+ * API_URL = "api_url" where api_url is url from where we'll get gifs data 
 (it's not secret it must be "https://api.giphy.com/")
 Than you should sync your project and press run to deploy.
 
